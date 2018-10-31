@@ -148,7 +148,14 @@ a:hover{
             </div>
 
             <ul class="list-unstyled">
-                <li class="media"><a href="https://serene-plains-92431.herokuapp.com/callback" target="_blank">
+                <li class="media"><a href="https://senorpayne.github.io/ConcreteOracles/" target="_blank">
+                  <img class="mr-3" src="IMG_1864.JPG" alt="ConcreteOracles">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Concrete Oracles</h5></a>
+                  <b> <i> Concrete Oracles</i></b> is a mobile responsive site for an upcoming book of poetry.  It was built using Bootstrap 4, javascript,  and has a firebase database used to store subscribers. 
+                  </div>
+                </li>
+               <li class="media"><a href="https://serene-plains-92431.herokuapp.com/callback" target="_blank">
                   <img class="mr-3" src="get.svg" alt="Generic placeholder image">
                   <div class="media-body">
                     <h5 class="mt-0 mb-1">GET-THAT_APP</h5></a>
@@ -157,6 +164,7 @@ It is built using React, and uses Express, Mongoose, Cheerio, Axios, Bootstrap 4
 The Get That App allows a user to set a budget and then browse Amazons website based on a keyword search. Once the user has found an item they like, they are able to select from 1 of 3 timeframes and add their future purchase to a wishlist. From there our app will calculate all items being saved over a specific timeframe and return the overall percentage of their budget being used and the total sum of what is saved. 
                   </div>
                 </li>
+              
                 <li class="media my-4"><a href="https://senorpayne.github.io/Top10songspreview/" target="_blank">
                   <img class="mr-3" src="record.png" alt="Generic placeholder image">
                   <div class="media-body">
@@ -194,7 +202,7 @@ The Get That App allows a user to set a budget and then browse Amazons website b
                   <div class="card border-dark mb-3" id="foot">
                    
                       <div class="card-body text-dark">
-                        <h5 class="card-title">2018</h5>
+                        <h5 class="card-title"id ="demo"></h5>
                         <p class="card-text"><a href ="mailto:senorpayne@yahoo.com">JPAYNE</p></a>
                       </div>        
     <!-- Optional JavaScript -->
@@ -202,5 +210,17 @@ The Get That App allows a user to set a budget and then browse Amazons website b
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      
+      date = Date.now()
+      console.log(date);
+      var d = new Date();
+      $("#demo").append (d.getFullYear());
+      console.log(d);
+      console.log(d.getDate());
+      console.log(d.getMonth());
+
+    </script>
   </body>
 </html>
